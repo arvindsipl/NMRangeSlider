@@ -58,6 +58,10 @@
 @property (assign, nonatomic) float lowerHandleHiddenWidth;
 @property (assign, nonatomic) float upperHandleHiddenWidth;
 
+@property (assign, nonatomic) BOOL isLowerHandle;
+
+
+@property (assign, nonatomic) BOOL isUpperHandle;
 // Images, these should be set before the control is displayed.
 // If they are not set, then the default images are used.
 // eg viewDidLoad
@@ -80,7 +84,6 @@
 
 @property (retain, nonatomic) UIImageView* lowerHandle;
 @property (retain, nonatomic) UIImageView* upperHandle;
-
 
 - (void)addSubviews;
 
